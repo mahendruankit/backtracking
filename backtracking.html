@@ -177,6 +177,53 @@ boolean solve(Node n) {
       }</pre
         >
       </blockquote>
+      <p>
+        Starting from the root, the only nodes that can be pushed onto the stack
+        are the children of the node currently on the top of the stack, and
+        these are only pushed on one child at a time; hence, the nodes on the
+        stack at all times describe a valid path in the tree. Nodes are removed
+        from the stack only when it is known that they have no goal nodes among
+        their descendents. Therefore, if the root node gets removed (making the
+        stack empty), there must have been no goal nodes at all, and no solution
+        to the problem.
+      </p>
+      <p>
+        When the stack algorithm terminates successfully, the nodes on the stack
+        form (in reverse order) a path from the root to a goal node.
+      </p>
+      <p>
+        Similarly, when the recursive algorithm finds a goal node, the path
+        information is embodied (in reverse order) in the sequence of recursive
+        calls. Thus as the recursion unwinds, the path can be recovered one node
+        at a time, by (for instance) printing the node at the current level, or
+        storing it in an array.
+      </p>
+      <p>
+        Here is the recursive backtracking algorithm, modified slightly to print
+        (in reverse order) the nodes along the successful path:
+      </p>
+      <blockquote>
+        <pre class="code-snippet">
+boolean solve(Node n) {
+          if n is a leaf node {
+              if the leaf is a goal node {
+                 print n
+                 return true
+              }
+              else return false
+          } else {
+              for each child c of n {
+                  if solve(c) succeeds {
+                      print n
+                      return true
+                  }
+              }
+              return false
+          }
+      }</pre
+        >
+      </blockquote>
+
       <p class="heading"><br />Keeping backtracking simple</p>
       <p>
         All of these versions of the backtracking algorithm are pretty simple,

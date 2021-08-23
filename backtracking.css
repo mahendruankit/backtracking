@@ -59,16 +59,15 @@ code,
 
 .cindy-puzzle {
   margin: 0 auto;
-  border: 1px solid black;
+  border: 2px solid grey;
   border-collapse: collapse;
-  border-color: gray;
   background-color: #dddddd;
 }
 
 .cindy-puzzle-data {
   width: 44px;
   padding: 6px;
-  border: 1px solid black;
+  border: 2px solid grey;
 }
 
 .cindy-puzzle-data-image {
