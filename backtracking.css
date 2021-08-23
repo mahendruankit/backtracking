@@ -20,7 +20,34 @@
   font-weight: bold;
 }
 
-.code {
+code,
+.code-snippet {
   color: rgb(102, 0, 0);
   font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.text-indent {
+  padding-left: 40px;
+}
+
+.code-snippet--blue {
+  color: #0000ff;
+}
+
+.timing-information {
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.timing-information,
+.timing-information-data {
+  border: 1px solid black;
+}
+
+.timing-information-data {
+  padding: 4px;
+}
+
+.timing-information-data--grey {
+  background-color: #cccccc;
 }
