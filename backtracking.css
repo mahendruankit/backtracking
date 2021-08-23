@@ -51,3 +51,37 @@ code,
 .timing-information-data--grey {
   background-color: #cccccc;
 }
+
+.code-snippet--black {
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.cindy-puzzle {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-color: gray;
+  background-color: #dddddd;
+}
+
+.cindy-puzzle-data {
+  width: 44px;
+  padding: 6px;
+  border: 1px solid black;
+}
+
+.cindy-puzzle-data-image {
+  height: 44px;
+  width: 44px;
+}
+
+.moves {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.moves-data {
+  font-size: 16px;
+  padding: 8px;
+}
